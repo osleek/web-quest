@@ -26,7 +26,7 @@ export default function Node10Torvalds({ nodeId, onComplete }) {
         border: '1px solid var(--fg-dim)',
         padding: '0.75rem 1rem',
         marginBottom: '1rem',
-        fontFamily: 'monospace',
+        fontFamily: 'Press Start 2P',
         fontSize: '0.85rem',
       }}>
         <div style={{ color: 'var(--fg-dim)', marginBottom: '0.5rem', fontSize: '0.75rem' }}>
