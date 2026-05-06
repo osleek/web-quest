@@ -52,7 +52,7 @@ export default function Node01Ada({ nodeId, onComplete }) {
         border: '1px solid var(--fg-dim)',
         padding: '0.75rem 1rem',
         marginBottom: '1rem',
-        fontFamily: 'monospace',
+        fontFamily: 'Press Start 2P'
       }}>
         {PSEUDOCODE.map(({ line, id }) => (
           <div key={id} style={{
