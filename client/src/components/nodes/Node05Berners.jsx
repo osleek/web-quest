@@ -10,7 +10,7 @@ export default function Node05Berners({ nodeId, onComplete }) {
   const { attempts, maxAttempts, feedback, locked, submit } = useNodeAnswer(nodeId, 3, onComplete);
   const [answer, setAnswer] = useState('');
   const [decoderInput, setDecoderInput] = useState('');
-  const [decoderOutput, setDecoderOutput] = useState(''); // длина, не сам ответ
+  const [decoderOutput, setDecoderOutput] = useState(''); 
 
   function handleDecode() {
     const result = base64Decode(decoderInput.trim());
@@ -22,7 +22,7 @@ export default function Node05Berners({ nodeId, onComplete }) {
   const centerContent = (
     <div>
       <p style={{ color: 'var(--fg-bright)', marginBottom: '1rem' }}>
-        Найди параметр <code style={{ color: '#ffff00' }}>token</code> и декодируй его из Base64:
+        Найди параметр <code style={{ color: '#ffff00', fontFamily: 'Press Start 2P' }}>token</code> и декодируй его из Base64:
       </p>
 
       <div style={{
