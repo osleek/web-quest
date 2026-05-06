@@ -1,0 +1,98 @@
+:root {
+  --bg: #0d0d0d;
+  --fg: #00ff00;
+  --fg-bright: #39ff14;
+  --fg-dim: #006600;
+  --fg-yellow: #ffff00;
+  --border: #00ff00;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Courier New', 'Fira Code', monospace;
+  min-height: 100vh;
+}
+
+.terminal-btn {
+  border: 1px solid var(--fg);
+  background: transparent;
+  color: var(--fg);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em 1em;
+  cursor: pointer;
+  border-radius: 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background 0.1s, color 0.1s;
+}
+
+.terminal-btn:hover {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.terminal-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.terminal-input {
+  background: transparent;
+  border: 1px solid var(--fg);
+  color: var(--fg);
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em 0.6em;
+  outline: none;
+  width: 100%;
+}
+
+.terminal-input:focus {
+  border-color: var(--fg-bright);
+  box-shadow: 0 0 6px var(--fg-bright);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.blink-cursor::after {
+  content: '█';
+  animation: blink 1s step-end infinite;
+  color: var(--fg-bright);
+}
+
+.terminal-text-glow {
+  text-shadow: 0 0 8px var(--fg);
+}
+
+.terminal-panel {
+  border: 1px solid var(--fg-dim);
+  padding: 1rem;
+  background: rgba(0, 255, 0, 0.02);
+}
+
+.terminal-error {
+  color: #ff4444;
+  border-color: #ff4444;
+}
+
+.terminal-success {
+  color: var(--fg-bright);
+}
+
+.terminal-hint {
+  color: var(--fg-dim);
+  font-style: italic;
+}
