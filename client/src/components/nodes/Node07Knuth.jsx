@@ -29,12 +29,13 @@ export default function Node07Knuth({ nodeId, onComplete }) {
         Определи временну́ю сложность алгоритма (Big-O нотация):
       </p>
 
+      {/* Псевдокод */}
       <div style={{
         background: 'rgba(0,255,0,0.03)',
         border: '1px solid var(--fg-dim)',
         padding: '0.75rem 1rem',
         marginBottom: '1rem',
-        fontFamily: 'monospace',
+        fontFamily: 'Press Start 2P',
         fontSize: '0.9rem',
         lineHeight: 1.8,
       }}>
