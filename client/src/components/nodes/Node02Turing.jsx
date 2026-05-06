@@ -4,6 +4,7 @@ import { useNodeAnswer } from '../../hooks/useNodeAnswer';
 
 const CIPHER_TEXT = 'KTPQR';
 const KEY = 'CODE';
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
 const DECODE_STEPS = [
   { cipher: 'K', key: 'C', cipherNum: 11, keyNum: 3 },
@@ -89,6 +90,62 @@ export default function Node02Turing({ nodeId, onComplete }) {
           </tbody>
         </table>
       )}
+
+      <div style={{ marginTop: '1.5rem' }}>
+        <p style={{ color: 'var(--fg-dim)', fontSize: '0.8rem', marginBottom: '0.4rem' }}>АЛФАВИТ:</p>
+        <table style={{ borderCollapse: 'collapse' }}>
+          <tbody>
+            {[0, 1, 2].map(row => (
+              <tr key={row}>
+                {ALPHABET.slice(row * 9, row * 9 + 9).map((letter, idx) => {
+                  const num = row * 9 + idx + 1;
+                  return (
+                    <td key={letter} style={{
+                      padding: 0,
+                      border: '1px solid var(--fg-dim)',
+                      width: '2.5rem',
+                      height: '2.5rem',
+                    }}>
+                      <div style={{
+                        position: 'relative',
+                        width: '100%',
+                        height: '100%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'var(--fg-dim)',
+                        fontSize: '1.1rem',
+                        fontWeight: 'bold',
+                      }}>
+                        {letter}
+                        <span style={{
+                          position: 'absolute',
+                          right: '2px',
+                          bottom: '1px',
+                          fontSize: '0.55rem',
+                          color: 'var(--fg-dim)',
+                          lineHeight: 1,
+                        }}>
+                          {num}
+                        </span>
+                      </div>
+                    </td>
+                  );
+                })}
+                {row === 2 && ALPHABET.slice(18).length < 9 &&
+                  Array(9 - ALPHABET.slice(18).length).fill(null).map((_, i) => (
+                    <td key={`empty-${i}`} style={{
+                      border: '1px solid var(--fg-dim)',
+                      width: '2.5rem',
+                      height: '2.5rem',
+                    }}></td>
+                  ))
+                }
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 
