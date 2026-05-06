@@ -23,7 +23,6 @@ export default function Node04Cerf({ nodeId, onComplete }) {
         Определи адрес сети для IP-адреса:
       </p>
 
-      {/* IP адрес */}
       <div style={{
         padding: '0.75rem 1rem',
         border: '1px solid var(--fg-bright)',
@@ -68,7 +67,7 @@ export default function Node04Cerf({ nodeId, onComplete }) {
       {showAnd && (
         <div style={{
           padding: '0.75rem', border: '1px solid var(--fg-dim)',
-          fontSize: '0.75rem', fontFamily: 'monospace',
+          fontSize: '0.75rem', fontFamily: 'Press Start 2P' ,
         }}>
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
