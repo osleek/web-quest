@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
   --bg: #0d0d0d;
   --fg: #00ff00;
   --fg-bright: #39ff14;
-  --fg-dim: #006600;
+  --fg-dim: #008800;
   --fg-yellow: #ffff00;
   --border: #00ff00;
+  --font-size-base: 15px;
+  --font-size-sm: 13px;
+  --font-size-xs: 12px;
 }
 
 *,
@@ -18,7 +23,9 @@
 body {
   background: var(--bg);
   color: var(--fg);
-  font-family: 'Courier New', 'Fira Code', monospace;
+  font-family: "Press Start 2P", 'Fira Code', monospace;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
   min-height: 100vh;
 }
 
@@ -27,8 +34,8 @@ body {
   background: transparent;
   color: var(--fg);
   font-family: inherit;
-  font-size: inherit;
-  padding: 0.4em 1em;
+  font-size: var(--font-size-base);
+  padding: 0.5em 1.2em;
   cursor: pointer;
   border-radius: 0;
   letter-spacing: 0.05em;
@@ -42,7 +49,7 @@ body {
 }
 
 .terminal-btn:disabled {
-  opacity: 0.4;
+  opacity: 0.35;
   cursor: not-allowed;
 }
 
@@ -51,15 +58,20 @@ body {
   border: 1px solid var(--fg);
   color: var(--fg);
   font-family: inherit;
-  font-size: inherit;
-  padding: 0.4em 0.6em;
+  font-size: var(--font-size-base);
+  padding: 0.5em 0.75em;
   outline: none;
   width: 100%;
+  line-height: 1.5;
 }
 
 .terminal-input:focus {
   border-color: var(--fg-bright);
-  box-shadow: 0 0 6px var(--fg-bright);
+  box-shadow: 0 0 8px var(--fg-bright);
+}
+
+select.terminal-input {
+  cursor: pointer;
 }
 
 @keyframes blink {
@@ -74,18 +86,18 @@ body {
 }
 
 .terminal-text-glow {
-  text-shadow: 0 0 8px var(--fg);
+  text-shadow: 0 0 10px var(--fg);
 }
 
 .terminal-panel {
   border: 1px solid var(--fg-dim);
-  padding: 1rem;
-  background: rgba(0, 255, 0, 0.02);
+  padding: 1.25rem;
+  background: rgba(0, 255, 0, 0.025);
 }
 
 .terminal-error {
-  color: #ff4444;
-  border-color: #ff4444;
+  color: #ff5555;
+  border-color: #ff5555;
 }
 
 .terminal-success {
@@ -95,4 +107,5 @@ body {
 .terminal-hint {
   color: var(--fg-dim);
   font-style: italic;
+  font-size: var(--font-size-base);
 }
