@@ -92,7 +92,7 @@ export default function Node06Codd({ nodeId, onComplete }) {
           disabled={locked}
           style={{
             resize: 'vertical',
-            fontFamily: 'monospace',
+            fontFamily: 'Press Start 2P' ,
             fontSize: '0.85rem',
             lineHeight: 1.6,
           }}
