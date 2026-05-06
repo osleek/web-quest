@@ -51,7 +51,7 @@ export default function Node09Neumann({ nodeId, onComplete }) {
         border: '1px solid var(--fg-dim)',
         padding: '0.75rem',
         marginBottom: '1rem',
-        fontFamily: 'monospace',
+        fontFamily: 'Press Start 2P',
         fontSize: '0.85rem',
       }}>
         <p style={{ color: 'var(--fg-dim)', fontSize: '0.75rem', marginBottom: '0.5rem' }}>
