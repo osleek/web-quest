@@ -22,7 +22,7 @@ export default function Node03Shannon({ nodeId, onComplete }) {
         border: '1px solid var(--fg-dim)',
         padding: '1rem',
         marginBottom: '1rem',
-        fontFamily: 'monospace',
+        fontFamily: 'Press Start 2P',
         fontSize: '0.85rem',
       }}>
         <div style={{ display: 'flex', gap: '2rem', marginBottom: '1rem' }}>
@@ -40,7 +40,7 @@ export default function Node03Shannon({ nodeId, onComplete }) {
           </div>
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem'}}>
           {[
             { label: 'NOT A', inputs: 'A', symbol: '¬', color: '#ff9900' },
             { label: 'A AND B', inputs: 'A, B', symbol: '∧', color: '#00aaff' },
