@@ -133,6 +133,7 @@ export default function Node03Shannon({ nodeId, onComplete }) {
       title="УЗЕЛ 3"
       person="Клод Шеннон"
       bio="Создатель теории информации. Заложил математические основы цифровых схем."
+      portrait="/portraits/claude-shannon.jpg"
       hint="NOT 1 = 0; 1 AND 0 = 0; 0 OR 0 = 0"
       attempts={attempts}
       maxAttempts={maxAttempts}

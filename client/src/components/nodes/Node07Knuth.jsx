@@ -117,6 +117,7 @@ export default function Node07Knuth({ nodeId, onComplete }) {
       title="УЗЕЛ 7"
       person="Дональд Кнут"
       bio="Автор «Искусства программирования». Разработал нотацию Big-O для анализа алгоритмов."
+      portrait="/portraits/donald-knuth.jpg"
       hint="Считай количество вложенных циклов — каждый цикл до N умножает сложность на N"
       attempts={attempts}
       maxAttempts={maxAttempts}

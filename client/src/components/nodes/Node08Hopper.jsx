@@ -102,6 +102,7 @@ export default function Node08Hopper({ nodeId, onComplete }) {
       title="УЗЕЛ 8"
       person="Грейс Хоппер"
       bio="Разработала первый компилятор. В 1947 году нашла настоящую моль в компьютере Harvard Mark II — первый реальный «баг»."
+      portrait="/portraits/grace-hopper.jpg"
       hint="Грейс Хоппер нашла настоящую моль в Harvard Mark II в 1947 году"
       attempts={attempts}
       maxAttempts={maxAttempts}

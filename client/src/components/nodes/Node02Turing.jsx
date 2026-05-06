@@ -181,6 +181,7 @@ export default function Node02Turing({ nodeId, onComplete }) {
       title="УЗЕЛ 2"
       person="Алан Тьюринг"
       bio="Один из основателей информатики и криптоанализа. Взломал шифр Энигмы."
+      portrait="/portraits/alan-turing.jpg"
       hint="Алфавит: A=1, B=2...Z=26. Вычитай номер буквы ключа из номера буквы шифра. Если результат ≤ 0, прибавь 26."
       attempts={attempts}
       maxAttempts={maxAttempts}

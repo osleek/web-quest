@@ -121,6 +121,7 @@ export default function Node10Torvalds({ nodeId, onComplete }) {
       title="УЗЕЛ 10"
       person="Линус Торвальдс"
       bio="Создатель ядра Linux и системы контроля версий Git. Символ открытого программного обеспечения."
+      portrait="/portraits/linus-torvalds.jpg"
       hint='grep "^d" выбирает строки, начинающиеся с "d" — это директории в выводе ls -la'
       attempts={attempts}
       maxAttempts={maxAttempts}

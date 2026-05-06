@@ -115,6 +115,7 @@ export default function Node01Ada({ nodeId, onComplete }) {
       title="УЗЕЛ 1"
       person="Ада Лавлейс"
       bio="Первая программистка. Показала, что машина может исполнять алгоритмы."
+      portrait="/portraits/ada-lovelace.png"
       hint="5! = 1×2×3×4×5"
       attempts={attempts}
       maxAttempts={maxAttempts}

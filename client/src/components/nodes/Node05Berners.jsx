@@ -110,6 +110,7 @@ export default function Node05Berners({ nodeId, onComplete }) {
       title="УЗЕЛ 5"
       person="Тим Бернерс-Ли"
       bio="Создатель World Wide Web. Разработал HTTP, HTML и первый браузер."
+      portrait="/portraits/tim-berners-lee.jpg"
       hint="QUNDRVNT → декодируй из Base64"
       attempts={attempts}
       maxAttempts={maxAttempts}

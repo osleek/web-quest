@@ -149,6 +149,7 @@ export default function Node04Cerf({ nodeId, onComplete }) {
       title="УЗЕЛ 4"
       person="Винт Серф и Боб Кан"
       bio="Создатели протокола TCP/IP — основы современного интернета."
+      portrait="/portraits/vint-cerf.jpg"
       hint="Маска /28 = 255.255.255.240; 47 AND 240 = 32"
       attempts={attempts}
       maxAttempts={maxAttempts}

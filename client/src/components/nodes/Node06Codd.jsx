@@ -158,6 +158,7 @@ export default function Node06Codd({ nodeId, onComplete }) {
       title="УЗЕЛ 6"
       person="Эдгар Кодд"
       bio="Создатель реляционной модели данных. Разработал язык SQL."
+      portrait="/portraits/edgar-codd.jpeg"
       hint="SELECT name FROM museum_staff WHERE dept = 'IT' ORDER BY salary DESC LIMIT 1"
       attempts={attempts}
       maxAttempts={maxAttempts}

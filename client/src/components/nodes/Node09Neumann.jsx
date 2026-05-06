@@ -173,6 +173,7 @@ export default function Node09Neumann({ nodeId, onComplete }) {
       title="УЗЕЛ 9"
       person="Джон фон Нейман"
       bio="Разработал архитектуру современного компьютера. Стек — ключевая структура данных в работе процессора."
+      portrait="/portraits/john-neumann.jpg"
       hint="PUSH добавляет элемент на вершину, POP удаляет с вершины. Принцип LIFO: последний вошёл — первый вышел."
       attempts={attempts}
       maxAttempts={maxAttempts}
