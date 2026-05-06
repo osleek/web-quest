@@ -37,7 +37,7 @@ export default function LoginScreen({ onLogin }) {
         <p style={{ marginBottom: '1.5rem', color: 'var(--fg-dim)' }}>{'>'} ТРЕБУЕТСЯ ИДЕНТИФИКАЦИЯ ОПЕРАТОРА</p>
 
         <form onSubmit={handleSubmit}>
-          <label style={{ display: 'block', marginBottom: '0.5rem' }}>ВВЕДИТЕ ПОЗЫВНОЙ:</label>
+          <label style={{ display: 'block', marginBottom: '0.5rem' }}>ВВЕДИТЕ НИКНЕЙМ:</label>
           <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.75rem' }}>
             <span style={{ color: 'var(--fg-bright)', lineHeight: '2.2' }}>{'>'}</span>
             <input
